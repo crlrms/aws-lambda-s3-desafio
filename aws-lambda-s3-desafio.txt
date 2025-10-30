@@ -1,0 +1,28 @@
+Tarefas automatizadas com Lambda Function e S3
+
+Amazon S3: Armazenamento em nuvem. Qualuqer tipo de arquivo. Escalável.
+Vantagens:
+- Durabilidade(redundância contra falhas)
+- Disponibilidade
+- Escalabilidade: Garante acesso contínuo
+- Segurança: Oferece formas de proteger a aplicação
+
+AWS Lambda: computação serveless, orientado para eventos
+Vantagens:
+- Execução sob demanda: responde a eventos
+- Escalabilidade automática
+- Custo eficiente: cobra pelo tempo de execução
+- integração com outros serviços AWS
+
+Hands on Upload de arquivos com processamento e registro no dynamodb
+
+- Desenhar um diagrama com todo os passos da operação
+
+1. Subir arquivo (CSV ou JSON) em um bucket
+2. Evento no S3 dispara uma Lambda Function
+3. Processamento do conteúdo e gravação no DynamoDB
+4. Outra função Lambda consulta a tabela e expõe os dados por meio de
+uma API Gateway.
+
+LocalStack
+Ambiente OpenSource para simular AWS
